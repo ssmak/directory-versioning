@@ -4,7 +4,6 @@
 'use strict';
 
 const util = require('util');
-const argv = require('yargs').argv;
 const exec = util.promisify(require('child_process').exec);
 const fs = require('fs');
 const path = require('path');
@@ -46,12 +45,12 @@ module.exports = {
       dir = dir.replace(/\s/g, '');
       fs.readdir(dir, (err, files) => {
         if(!err) {
-          // folder exists -< check if directory already GIT repository
+          // folder exists -> check if directory already GIT repository
           fs.readdir(path.resolve(dir, '.git'), (err, files) => {
             if(!err) {
-              resolve();
+              resolve(true);
             } else {
-              reject(err);
+              resolve(false);
             }
           });
         } else {
@@ -105,7 +104,7 @@ module.exports = {
             }
           }).catch(err => {
             // check if no change to commit
-            if(/working tree clean/.test(err.stdout)) {
+            if(/nothing to commit/.test(err.stdout)) {
               // no change to commit -> treat as no error
               resolve('no change to commit');
             } else {
