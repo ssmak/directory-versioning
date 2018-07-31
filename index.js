@@ -5,6 +5,7 @@
 
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
+const maxBuffer = 1024 * 1024 * 5; // 5Mb
 const fs = require('fs');
 const path = require('path');
 const dateFormat = require('dateformat');
@@ -12,7 +13,7 @@ const dateFormat = require('dateformat');
 module.exports = {
   GetGitVersionPromise: () => {
     return new Promise((resolve, reject) => {
-      exec('git version').then((values) => {
+      exec('git version', { maxBuffer: maxBuffer }).then((values) => {
         const { stdout, stderr } = values;
         if(!stderr) {
           // check if GIT is available
@@ -63,7 +64,7 @@ module.exports = {
   GitInitPromise: (dir) => {
     return new Promise((resolve, reject) => {
       process.chdir(dir); // change working directory to Git repository
-      exec('git init .').then((values) => {
+      exec('git init .', { maxBuffer: maxBuffer }).then((values) => {
         const { stdout, stderr } = values;
         if(!stderr) {
           resolve(stdout);
@@ -76,16 +77,16 @@ module.exports = {
   GitCommitPromise: (dir) => {
     return new Promise((resolve, reject) => {
       process.chdir(dir); // change working directory to Git repository
-      exec('git add -A').then((values) => {
+      exec('git add -A', { maxBuffer: maxBuffer }).then((values) => {
         const { stdout, stderr } = values;
         if(!stderr) {
           // git add success -> git commit
-          exec(`git commit -m "Daily commit."`).then((values) => {
+          exec(`git commit -m "Daily commit."`, { maxBuffer: maxBuffer }).then((values) => {
             const { stdout, stderr } = values;
             if(!stderr) {
               // git commit success -> add a tag
               const tag = dateFormat(new Date(), "yyyymmdd-HHMMss");
-              exec(`git tag ${tag}`).then((values) => {
+              exec(`git tag ${tag}`, { maxBuffer: maxBuffer }).then((values) => {
                 const { stdout, stderr } = values;
                 if(!stderr) {
                   // git tag success
