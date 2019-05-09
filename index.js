@@ -23,7 +23,7 @@ console.log(chalk.yellow(`Repository: ${appConfig.repository.url}`));
 console.log(chalk.yellow(`Author: ${appConfig.author}`));
 console.log(chalk.yellow(`License: ${appConfig.license}`));
 console.log('\nUsage: directory-versioning --path <DIRECTORY_PATH> [--d] [--i 10] [--q]');
-console.log('d: Run as dedicated process.\ni: Time interval, unit in second(s).\nq: Quiet mode.');
+console.log('d: Run as long run process.\ni: Time interval, unit in second(s).\nq: Quiet mode.');
 console.log('\n');
 
 /*

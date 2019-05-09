@@ -37,7 +37,7 @@ npm install -g directory-versioning
 ```bash
 directory-versioning --path <PATH_OF_THE_FOLDER> [--d] [--i 10] [--q]
 ```
-d: Run as dedicated process.<br />
+d: Run as long run process.<br />
 i: Time interval, unit in second(s).<br />
 q: Quiet mode.
 
