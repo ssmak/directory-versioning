@@ -9,4 +9,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.0]
 ### Added
 - README.md
-- CHANGELOG.md
+- npmCHANGELOG.md
