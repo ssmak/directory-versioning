@@ -1,13 +1,19 @@
 {
   "name": "directory-versioning",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Make versioning for directory with Git.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "npx mocha"
   },
-  "keywords": [],
+  "keywords": [
+    "version",
+    "versioning",
+    "git",
+    "directory versioning",
+    "production code versioning"
+  ],
   "author": "Steve Mak",
   "license": "MIT",
   "homepage": "https://github.com/ssmak/directory-versioning",

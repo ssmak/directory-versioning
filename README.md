@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ssmak/directory-versioning">
-    <img src="https://img.shields.io/badge/version-v1.0.2-blueviolet.svg" />
+    <img src="https://img.shields.io/badge/version-v1.0.3-blueviolet.svg" />
   </a>
   <a href="https://www.npmjs.com/package/directory-versioning">
     <img src="https://img.shields.io/badge/env-nodejs-orange.svg" />
