@@ -6,7 +6,7 @@
   <a href="https://github.com/ssmak/directory-versioning">
     <img src="https://img.shields.io/badge/version-v1.0.0-blueviolet.svg" />
   </a>
-  <a href="https://atom.io/packages/snippets-from-gist">
+  <a href="https://atom.io/packages/directory-versioning">
     <img src="https://img.shields.io/badge/env-nodejs-orange.svg" />
   </a>
 </div>
@@ -14,7 +14,7 @@
 
 ## History
 Manager calls a meeting with me and complain that the website is unstable. "Anything updated yesterday?" - ask by the Manager"<br />
-The production environment can be complex and not only one person can add, update or delete the content. The result is "I don't know who make the change."
+The production environment can be complex and not only one person can add, update or delete the content. The result is "I don't know who make the change."<br />
 The solution is to make versioning for any repositories that you concern. View and rollback the change on demand.
 <br />
 <div align="center">
