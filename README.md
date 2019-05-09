@@ -1,7 +1,6 @@
 <h1 align="center">directory-versioning</h1>
 
-<h5 align="center">Version control for your production code.
-</h5>
+<h5 align="center">Make versioning for directory with Git.</h5>
 <br />
 <div align="center">
   <a href="https://github.com/ssmak/directory-versioning">
@@ -34,13 +33,13 @@ The solution is to make versioning for any repositories that you concern. View a
 npm install -g directory-versioning
 ```
 
-2. Locate to the package setting and type your gist repository like this (*Remember* to press -Enter- after edit)
+2. Start versioning for directory
 ```bash
-directory-version --path <PATH_OF_THE_FOLDER> [--d] [--i 10] [--q]
-d: Run as dedicated process.
-i: Time interval, unit in second(s).
-q: Quiet mode.
+directory-versioning --path <PATH_OF_THE_FOLDER> [--d] [--i 10] [--q]
 ```
+d: Run as dedicated process.<br />
+i: Time interval, unit in second(s).<br />
+q: Quiet mode.
 
 ## Test
 ``` bash
