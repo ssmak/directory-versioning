@@ -1,8 +1,8 @@
 'use strict';
 
-const DV = require('../index.js'); // directory versioning module
-const assert = require('assert');
 const path = require('path');
+const DV = require(path.resolve(__dirname, '../lib/dr.js')); // directory versioning module
+const assert = require('assert');
 const rmdir = require('rmdir-sync');
 const fs = require('fs');
 
