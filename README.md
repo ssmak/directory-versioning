@@ -6,7 +6,7 @@
   <a href="https://github.com/ssmak/directory-versioning">
     <img src="https://img.shields.io/badge/version-v1.0.0-blueviolet.svg" />
   </a>
-  <a href="https://atom.io/packages/directory-versioning">
+  <a href="https://www.npmjs.com/package/directory-versioning">
     <img src="https://img.shields.io/badge/env-nodejs-orange.svg" />
   </a>
 </div>
