@@ -11,6 +11,8 @@
   </a>
 </div>
 <br />
+<a href="https://nodei.co/npm/directory-versioning/"><img src="https://nodei.co/npm/directory-versioning.png?compact=true"></a>
+<br />
 
 ## History
 Manager calls a meeting with me and complain that the website is unstable. "Anything updated yesterday?" - ask by the Manager"<br />
