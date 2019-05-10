@@ -11,7 +11,9 @@
   </a>
 </div>
 <br />
+<div align="center">
 <a href="https://nodei.co/npm/directory-versioning/"><img src="https://nodei.co/npm/directory-versioning.png?compact=true"></a>
+</div>
 <br />
 
 ## History
